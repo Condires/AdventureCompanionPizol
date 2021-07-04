@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="Allgemein">
+        <EditTextPreference
+            android:defaultValue="8"
+            android:key="key_volume"
+            android:summary="Zahl zwischen 0 und 15"
+            android:title="Lautstärke"
+            android:inputType="number"/>
+        <EditTextPreference
+            android:key="key_caller"
+            android:summary="5"
+            android:title="erlaubte SMS Sender +417......,+417... (ohne Leerstellen)" />
+        <EditTextPreference
+            android:defaultValue="Wangs:"
+            android:key="key_sms_signature"
+            android:summary=""
+            android:title="SMS Prefix" />
+        <EditTextPreference
+            android:defaultValue="+41796543210"
+            android:key="key_notfall_nummer"
+            android:summary="+41796543210"
+            android:title="Notfall Nummer" />
+        <EditTextPreference
+            android:defaultValue="Pizolbahn Wangs"
+            android:key="key_default_anlage"
+            android:summary="Pizolbahn Wangs"
+            android:title="Default Anlage" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Steuerung">
+        <EditTextPreference
+            android:key="key_time_to_notstop"
+            android:summary="von Airtable"
+            android:title="Sekunden bis Not-Stop"
+            android:inputType="number"/>
+        <EditTextPreference
+            android:key="key_battery_level"
+            android:summary="90"
+            android:title="Alarm Ladezustand des Akkus in %"
+            android:inputType="number"/>
+        <EditTextPreference
+            android:key="key_battery_temp"
+            android:summary="test"
+            android:title="Alarm Temperatur des Akkus"
+            android:inputType="number"/>
+        <EditTextPreference
+            android:key="key_internet_timeout"
+            android:summary="30"
+            android:title="Timeout in Sekunden für Verbindungstest"
+            android:inputType="number"/>
+        <EditTextPreference
+            android:key="key_dist_log_m"
+            android:summary="100"
+            android:title="m für Test der Richtung"
+            android:inputType="number"/>
+        <EditTextPreference
+            android:key="key_restart_delay_sec"
+            android:summary="180"
+            android:title="minimum Zeit (s) zwischen zwei GPS Restarts"
+            android:inputType="number"/>
+        <EditTextPreference
+            android:key="key_min_verweilzeit_sec"
+            android:summary="60"
+            android:title="minimum Zeit am Ort bis Abfahrt"
+            android:inputType="number"/>
+
+        <EditTextPreference
+            android:key="key_restart_distance_m"
+            android:summary="300"
+            android:title="m ohne Ort bis GPS Restart"
+            android:inputType="number"/>
+        <EditTextPreference
+            android:key="key_gps_min_speed"
+            android:summary="0.9"
+            android:title="Speed ms ab wann das GPS Signal verwertet wird"
+            android:inputType="number"/>
+        <EditTextPreference
+            android:key="key_wlan_distance_m"
+            android:summary="200"
+            android:title="m wann haben wir frühestens WLAN"
+            android:inputType="number"/>
+        <EditTextPreference
+            android:key="key_wlan_master_i"
+            android:summary="1"
+            android:title="1 Ort wird mit WLAN erkannt 2 mit GPS"
+            android:inputType="number"/>
+
+
+
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Airtable">
+        <EditTextPreference
+            android:key="key_apikey"
+            android:summary="von Airtable"
+            android:title="API-Key"
+            android:inputType="textPassword"/>
+        <EditTextPreference
+            android:key="key_base_name"
+            android:summary="Name der Datenbank"
+            android:title="Airtable Datenbank-Name" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

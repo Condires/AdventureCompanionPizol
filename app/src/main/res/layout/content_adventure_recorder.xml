@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".recorder.AdventureRecorderActivity"
+    tools:showIn="@layout/activity_adventure_recorder">
+
+
+    <GridLayout
+
+        android:layout_width="397dp"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="8dp"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="16dp">
+
+
+        <Button
+            android:id="@+id/button_new_anlage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_weight="1"
+            android:text="New" />
+
+        <Spinner
+            android:id="@+id/spinner_anlage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:layout_columnSpan="2"
+            android:drawSelectorOnTop="true"
+            android:prompt="@string/item_prompt" />
+
+
+        <EditText
+            android:id="@+id/text_ort_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:layout_columnSpan="3"
+            android:layout_gravity="fill_horizontal"
+            android:inputType="text"
+            android:textSize="12sp" />
+
+
+        <SeekBar
+            android:id="@+id/seekBar_weg"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_row="2"
+            android:layout_rowSpan="7"
+            android:layout_column="0"
+            android:rotation="270"
+            tools:layout_editor_absoluteX="206dp"
+            tools:layout_editor_absoluteY="176dp" />
+
+
+        <Button
+            android:id="@+id/button_set_nach_ort"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:layout_row="2"
+            android:layout_column="1"
+            android:text="nach Ort" />
+
+        <TextView
+            android:id="@+id/text_view_nachOrt"
+            android:layout_width="wrap_content"
+            android:layout_height="64dp"
+            android:layout_row="2"
+            android:layout_column="2"
+            android:layout_columnSpan="1"
+            android:text="Nach Ort" />
+
+
+
+        <Button
+            android:id="@+id/button_new_hello_action"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="3"
+            android:layout_column="1"
+            android:text="Gruss" />
+
+        <TextView
+            android:id="@+id/text_view_m_hello"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_row="3"
+            android:layout_column="2"
+            android:layout_columnSpan="2"
+            android:text="Abstand Nach-Ort" />
+
+
+        <TextView
+            android:id="@+id/text_view_current_ort"
+            android:layout_width="wrap_content"
+            android:layout_height="64dp"
+            android:layout_row="4"
+            android:layout_column="2"
+            android:layout_columnSpan="2"
+            android:text="Aktueller Ort" />
+
+
+        <Button
+            android:id="@+id/button_new_story_action"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="5"
+            android:layout_column="1"
+            android:text="Story" />
+        <TextView
+            android:id="@+id/text_view_m_story"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_row="5"
+            android:layout_column="2"
+            android:text="Abstand Von-Ort" />
+
+
+        <Button
+            android:id="@+id/button_new_goodby_action"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="6"
+            android:layout_column="1"
+            android:text="Abschied" />
+        <TextView
+            android:id="@+id/text_view_m_goodby"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_row="6"
+            android:layout_column="2"
+            android:text="Abstand Von-Ort" />
+
+
+        <Button
+            android:id="@+id/button_set_von_ort"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="7"
+            android:layout_column="1"
+            android:text="von Ort" />
+
+        <TextView
+            android:id="@+id/text_view_von_ort"
+            android:layout_width="wrap_content"
+            android:layout_height="64dp"
+            android:layout_row="7"
+            android:layout_column="2"
+            android:text="Von-Ort" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="8"
+            android:layout_column="1"
+            android:layout_columnSpan="3"
+            android:gravity="right"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/button_start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Start Anlage" />
+
+            <Button
+                android:id="@+id/button_start_next_weg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nächster Weg" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="10"
+            android:layout_column="0"
+            android:layout_columnSpan="3"
+            android:gravity="right"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/button_record_voice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Microphone" />
+
+            <Button
+                android:id="@+id/button_take_picture"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Camera" />
+
+        </LinearLayout>
+
+
+    </GridLayout>
+
+
+</android.support.constraint.ConstraintLayout>

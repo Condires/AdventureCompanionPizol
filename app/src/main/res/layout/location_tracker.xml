@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LocationTrackerActivity">
+
+    <SeekBar
+        android:id="@+id/seekbar_audio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/currentLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/seekbar_audio"
+        android:text="Current Location"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="111dp"
+        tools:layout_editor_absoluteY="40dp"
+        app:layout_constraintTop_toBottomOf="@+id/seekbar_audio"/>
+
+    <ScrollView
+        android:id="@+id/scroll_container"
+        android:layout_width="match_parent"
+        android:layout_height="515dp"
+        android:layout_below="@+id/currentLocation"
+        android:layout_margin="8dp"
+        android:layout_weight="1"
+        app:layout_constraintTop_toBottomOf="@+id/currentLocation"
+        tools:layout_editor_absoluteX="65dp">
+
+        <TextView
+            android:id="@+id/location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="8dp"
+            android:gravity="center_horizontal"
+            android:text="-.-"
+            android:textSize="23sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/currentLocation" />
+    </ScrollView>
+
+
+
+</android.support.constraint.ConstraintLayout>
